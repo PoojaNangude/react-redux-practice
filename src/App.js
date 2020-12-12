@@ -2,13 +2,14 @@ import React from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
-import NewCakeContainer from './Components/NewCakeContainer';
+import ItemContainer from './Components/ItemContainer';
 
 function App() {
   return (
     <Provider store = {store}>
       <div className="App">
-        <NewCakeContainer/>
+        <ItemContainer cake/>
+        <ItemContainer/>
       </div>
     </Provider>
 
